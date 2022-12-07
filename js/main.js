@@ -10,7 +10,7 @@ import LightBox from './components/thelightboxcomponent.js';
         created() {
             // imported the scripts from the marvel built class files.
             // ALWAYS get your remote data here
-            fetch('./data.json')
+            fetch('./scripts/json.php')
                 .then(res => res.json())
                 .then(data => this.carData = data)
                 .catch(error => console.error(error));
@@ -31,7 +31,6 @@ import LightBox from './components/thelightboxcomponent.js';
                 // debugger;
                 this.lightboxData = item;
                 this.showLightBox = true;
-
             }
         },
 
